@@ -1,0 +1,154 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+$brand:#E70613;
+.logo
+{
+    width: 410px;
+}
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    padding:14px 27px;
+    &:hover
+    {
+        background: $brand;
+    }
+}
+.block1
+{
+    background: #F1F1F1;
+    line-height: 40px;
+    span {
+        background: $brand;
+        padding: 0px 10px;
+        position: relative;
+        &::after
+        {
+            position: absolute;
+            border: 20px solid ;
+            border-color: transparent transparent transparent $brand;
+            left: 90%; top: 0;
+            content: '';
+        }
+    }
+    .trending {
+        li 
+        {
+            display: inline;
+            padding: 5px 20px;
+            &::before
+            {
+                content: "#";
+            }
+        }
+    }
+}
+.article
+{
+    width: 20px;
+}
+.title 
+{  
+    position: relative;
+    span{
+    background: $brand;
+    color: white;
+    padding: 0px 10px;
+    display: inline-block;
+  
+    }
+    &::before
+    {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: whitesmoke;
+        position: absolute;
+        left: 100px;
+        top: 19px;
+        
+    }
+}
+.block6-box
+{
+ position: relative;
+ &:hover
+ {
+    h4{
+        bottom: 250px;
+        opacity: 0;
+    }
+ }
+ h4 
+ {
+    position:absolute;
+    bottom: 150px;
+    color: white;
+    margin-left: 20px;
+    z-index: 2;
+    transition: 0.9s;
+ }
+ img 
+ {
+    width: 100%;
+    height: 40vh;
+ }
+ &::after
+ {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.5);
+    left: 0px;
+    z-index: 1;
+ }
+}
+.ddd
+{
+    img
+    {
+        height: 25vh;
+    }
+}
+.block13
+{
+    background: #212121;
+    color: white;
+     border-bottom: 1px solid #313131;
+}
+footer
+{
+    background: #212121;
+    color: white;
+    ul {
+        li 
+        {
+            text-decoration: none;
+            list-style: none;
+        }
+    }
+     
+}
+.bl 
+{
+    border-right: 1px solid #313131;   
+}
+.arrow
+{
+    width: 50px;
+    height: 50px;
+    background: $brand;
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    a 
+    {
+        color: white;
+    }
+}
+html
+{
+    scroll-behavior: smooth;
+}
